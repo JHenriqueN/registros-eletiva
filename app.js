@@ -11,7 +11,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // Define a porta que o servidor irá escutar
-const PORT = 2229;
+const PORT = 4000; //mudança de porta para teste
 
 // Middleware que faz o Express entender JSON no corpo das requisições
 app.use(bodyParser.json());
@@ -31,7 +31,7 @@ db.run(`CREATE TABLE IF NOT EXISTS registros (
 )`);
 
 //////////////////////////////////////////////////////////////////////////////////////////
-// ROTAS DA API
+//                                      ROTAS DA API                                    //
 //////////////////////////////////////////////////////////////////////////////////////////
 
 // Rota GET /registros - Retorna todos os registros do banco
