@@ -11,7 +11,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // Define a porta que o servidor irá escutar
-const PORT = 4000; //mudança de porta para teste
+const PORT = 2229; //testei com a porta 4000 para tirar uma duvida, e agora deixando a porta que estava 2229
 
 // Middleware que faz o Express entender JSON no corpo das requisições
 app.use(bodyParser.json());
